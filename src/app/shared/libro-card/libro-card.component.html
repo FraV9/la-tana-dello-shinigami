@@ -1,0 +1,15 @@
+<div class="card-container" *ngFor="let libro of libri">
+  <div class="card">
+    <div class="card-image"[ngStyle]="{'background-image': 'url(' + libro.image + ')'}"></div>
+    <div class="card-body">
+      <h5 class="card-title">{{libro.title}}</h5>
+      <p class="card-text">
+        Autore:      {{libro.autore}} <br>
+        Descrizione: {{libro.description}}<br>
+        Data:        {{libro.date}}<br>
+        Editore:     {{libro.editore}}
+      </p>
+      <a class="btn btn-primary" routerLink="dettaglio/{{libro.title}}/{{libro._id}}">Visualizza</a>
+    </div>
+  </div>
+</div>

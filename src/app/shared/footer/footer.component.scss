@@ -1,0 +1,33 @@
+@import "../../../styles/colors.scss";
+
+footer {
+  background-color: $secondary-color-5;
+  justify-content: space-around;
+  height: 100px;
+  padding: 4px;
+  display: flex;
+  width: 100%;
+}
+
+.icona-berserk {
+  width: 80px;
+  margin-right: 5px;
+  padding-top: 6px;
+}
+
+h3 {
+  padding-top: 4px;
+  color: $secondary-color-1;
+}
+
+.div-footer-1 {
+  color: $secondary-color-1;
+  align-items: center;
+  display: flex;
+}
+
+.p-via {
+  font-size: 12px;
+  padding-right: 4px;
+  padding-top: 10px;
+}

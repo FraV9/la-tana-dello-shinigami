@@ -1,5 +1,7 @@
+@import "../../..//styles/colors.scss";
+
 header {
-  background-color: black;
+  background-color: $secondary-color-5;
 }
 
 .mat-icon {
@@ -8,11 +10,18 @@ header {
   font-size: 21px;
   padding: 2px;
   margin-right: 4px;
+  color: $primary-color-1;
 }
 
 .icona-berserk {
   width: 48px;
   height: 48px;
   margin-right: 5px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
 }
 

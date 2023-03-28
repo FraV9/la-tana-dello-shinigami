@@ -1,0 +1,42 @@
+@import "../../../../styles/colors.scss";
+
+.detail-container {
+
+
+  .image-libro {
+    height: 524px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    // width: 100%;
+  }
+
+  .titolo {
+    color: $primary-color-1;
+    text-align: center;
+    font-family: 'Shojumaru', cursive;
+    margin-top: 15px;
+    padding-top: 8px;
+    font-weight: 600;
+  }
+
+  .p-descrizione {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    font-family: 'Shojumaru', cursive;
+  }
+
+  .p-autore {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .p-data {
+    text-align: right;
+  }
+}
+
+

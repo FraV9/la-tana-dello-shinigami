@@ -1,0 +1,58 @@
+@import "../../../styles/colors.scss";
+
+.card-container {
+  display: block;
+  float: left;
+  width: 23%;
+  margin-left: 1.6%;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.card {
+  text-align: center;
+
+  border-radius: 2rem;
+
+  .card-title {
+    font-weight: 900;
+    font-size: 16px;
+    color: $secondary-color-5;
+  }
+
+  .card-text {
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .btn.btn-primary {
+    background-color: $primary-color-3;
+    border: none;
+    margin: auto;
+    padding: 8px, 35px;
+  }
+}
+
+
+.card-body {
+
+  .card-title {
+    font-size: 20px !important;
+    margin-bottom: 5px;
+  }
+
+  .card-text {
+    margin-bottom: 30px;
+  }
+}
