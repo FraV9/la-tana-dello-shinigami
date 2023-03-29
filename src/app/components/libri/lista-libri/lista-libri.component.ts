@@ -11,6 +11,7 @@ import { LibroService } from 'src/app/services/libro.service';
 export class ListaLibriComponent {
 
   libri: Libro[];
+  titoloLibro: string;
 
   constructor(private libroService: LibroService) {}
 
@@ -24,4 +25,13 @@ export class ListaLibriComponent {
       }
     })
   }
+
+  riceviMessaggio(e: any) {
+    if(this.titoloLibro == e) {
+      this.titoloLibro = '';
+    } else {
+      this.titoloLibro = e;
+    }
+  }
+
 }

@@ -1,12 +1,17 @@
-<div class="detail-container">
-  <div class="image-libro" [ngStyle]="{'background-image': 'url(' + libro.image + ')'}"></div>
+<div *ngIf="libro; else libro_non_trovato">
+  <!-- <div class="image-libro" [ngStyle]="{'background-image': 'url(' + libro.image + ')'}"></div> -->
+  <img [src]="libro.image" width="100%">
   <div>
     <h2 class="titolo">{{libro.title}}</h2>
-    <p class="p-description">{{libro.description}}</p>
+    <p class="p-descrizione">{{libro.description}}</p>
     <p class="p-autore">{{libro.autore}}</p>
     <p class="p-data">Opera pubblicata il: {{libro.date}}</p>
   </div>
 </div>
+
+<ng-template #libro_non_trovato class="titolo-non-trovato">
+  <h2>Libro non Disponibile</h2>
+</ng-template>
 
 
 

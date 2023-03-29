@@ -5,6 +5,10 @@
     <h2>Benvenuti Nella <span class="container-tana">Tana</span></h2>
     <p class="paragrafo">Bentrovati nella Tana, antro di mille fantasie e sogni; lasciati trasportare alla scoperta del mondo a fumetti, tra autori occidentali e Orientali. La Tana offre una vasta varietà di letture fra Comics e Manga, dalla cruda visione della società capitalistica di Kirkman con il suo "The Walking Dead", passando dalla dolce commistione di Amore e Odio, di bene e male dell'opera magna del compianto maestro Miura, Berserk, fino alla dolcezza della scoperta nella sua forma più pura, portavoce dell'amicizia, della risata e dell'importanza della libertà, One Piece!</p>
   </div>
-  <app-libri></app-libri>
+
+  <div id="ultimi-libri-aggiunti">
+    <h2><span style="color: red;">Ultime</span> Opere Aggiunte</h2>
+    <app-libro-card [libri]="libri" [page]="'home'"></app-libro-card>
+  </div>
 </div>
 

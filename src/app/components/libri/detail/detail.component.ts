@@ -8,7 +8,7 @@ import { LibroService } from 'src/app/services/libro.service';
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss']
 })
-export class DetailComponent {
+export class DetailComponent implements OnInit {
 
   libro: Libro;
 
